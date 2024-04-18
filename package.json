@@ -1,0 +1,33 @@
+{
+    "name": "@spintech-dev/spin-react-lib",
+    "version": "0.0.1",
+    "author": "Spintech Group SRL",
+    "description": "Spintech Group Library for React Projects",
+    "license": "MIT",
+    "scripts": {
+        "dev": "rollup -c --watch",
+        "build": "rollup -c "
+    },
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/spintech-dev"
+    },
+    "dependencies": {
+        "@rollup/plugin-commonjs": "^25.0.7",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-typescript": "^11.1.6",
+        "react-spinners": "^0.13.8",
+        "rollup": "^4.14.3",
+        "typescript": "^5.4.5"
+    },
+    "devDependencies": {
+        "@types/react": "^18.2.79",
+        "rollup-plugin-dts": "^6.1.0",
+        "tslib": "^2.6.2"
+    }
+}
